@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+}
+body {
+  background: url("./images/bg-mobile.png");
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: cursive;
+  font-size: 14px;
+}
+.dezi {
+  margin: 20% auto;
+}
+
+.top {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: hsl(228, 56%, 26%);
+  width: 60%;
+  padding: 45px;
+  border-radius: 12px;
+  border-top-right-radius: 50%;
+}
+.logo {
+  margin-bottom: 20px;
+}
+.icons img {
+  margin-right: 10px;
+  background: hsl(229, 57%, 11%);
+  padding: 15px;
+  border-radius: 9px;
+}
+.bottom {
+  position: relative;
+  background: hsl(228, 56%, 26%);
+  color: hsl(229, 7%, 55%);
+  margin: auto;
+  width: 50%;
+  padding: 65px;
+  border-radius: 13px;
+  margin-top: 15px;
+  z-index: 1;
+}
+.bottom p {
+  font-size: 1em;
+  margin-bottom: 12px;
+}
+.load {
+  padding: 3px;
+  border: 1px solid;
+  height: 14px;
+  width: 100%;
+  border-radius: 13px;
+  background: hsl(229, 57%, 11%);
+  border-style: none;
+}
+.ongoing {
+  width: 70%;
+  align-items: center;
+  border: 1px solid;
+  height: 14px;
+  border-radius: 9px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-style: none;
+}
+.bottom p {
+  color: white;
+}
+strong {
+  color: white;
+}
+.boll {
+  border: 1px solid;
+  border-style: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: white;
+  float: right;
+}
+.beneath {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.overlap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: -25px;
+  right: 110px;
+  background: white;
+  padding: 13px 24px;
+  border-radius: 9px;
+  color: hsl(229, 57%, 11%);
+  z-index: 2;
+}
+.overlap strong {
+  font-size: 2em;
+  color: hsl(229, 57%, 11%);
+}
+.overlap p {
+  color: hsl(229, 7%, 55%);
+  margin-left: 12px;
+}
+#footer {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: hsl(229, 7%, 55%);
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .dezi {
+    display: flex;
+    align-items: center;
+  }
+  .top {
+    width: auto;
+
+    margin-left: 250px;
+  }
+  .bottom {
+    width: auto;
+
+    margin-right: 250px;
+    width: 30%;
+  }
+  .overlap {
+    position: absolute;
+    height: 40px;
+    top: -50px;
+    right: 50px;
+    border-bottom-right-radius: 0px;
+  }
+}
