@@ -2,16 +2,24 @@
   margin: 0;
 }
 body {
-  background: url("./images/bg-mobile.png");
+  /* background: url("./images/bg-mobile.png");
   min-height: 100%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   font-family: cursive;
   font-size: 14px;
 }
 .dezi {
-  margin: 20% auto;
+  background: url("./images/bg-mobile.png");
+
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.centre {
+  padding-top: 20%;
 }
 
 .top {
@@ -107,9 +115,12 @@ strong {
   margin-left: 12px;
 }
 #footer {
-  display: flex;
+  position: absolute;
+
   color: white;
-  justify-content: center;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
 }
 #footer a {
   color: white;
@@ -119,28 +130,26 @@ strong {
   color: hsl(229, 7%, 55%);
 }
 @media screen and (min-width: 1200px) {
-  body {
+  .dezi {
     background: url("./images/bg-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100%;
-    min-width: 100%;
+    height: 100vh;
   }
-  .dezi {
+  .centre {
+    position: absolute;
     display: flex;
+    gap: 60px;
+    justify-content: center;
     align-items: center;
+    margin-left: 20%;
+    width: 70vw;
   }
   .top {
     width: auto;
-
-    margin-left: 250px;
   }
   .bottom {
-    width: auto;
-
-    margin-right: 250px;
-    width: 30%;
   }
   .overlap {
     position: absolute;
